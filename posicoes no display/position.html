@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .quadrado {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .container {
+            position: relative;
+            width: 500px;
+            height: 300px;
+            background-color: gray;
+            margin-top: 50px;
+        }
+
+
+        .bg-red {
+            background-color: red;
+        }
+
+        .bg-blue {
+            background-color: blue;
+        }
+
+        .bg-green {
+            background-color: green;
+        }
+
+        .bg-yellow {
+            background-color: yellow;
+        }
+
+        .bg-aqua {
+            background-color: aqua;
+        }
+
+        .bg-brown {
+            background-color: brown;
+        }
+
+        .static {
+            position: static;
+        }
+
+
+        .fixed {
+            position: fixed;
+            right: 15px;
+            bottom: 15px;
+            z-index: 100;
+        }
+
+        .relative {
+            position: relative;
+            left: 20px;
+            top: 20px;
+        }
+
+        .absolute {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0px;
+            z-index: 99;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>CSS Position</h1>
+
+    <div class="quadrado bg-red static">
+        static
+    </div>
+
+    <div class="quadrado bg-blue relative">
+        relative
+    </div>
+
+    <div class="quadrado bg-brown sticky">
+        sticky
+    </div>
+
+    <div class="quadrado bg-green fixed">
+        fixed
+    </div>
+
+
+    <div class="container">
+
+        <div class="quadrado bg-aqua ">
+            static
+        </div>
+
+        <div class="quadrado bg-yellow absolute">
+            absolute
+        </div>
+
+    </div>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque asperiores laudantium vel optio saepe
+            quas dicta aliquam. Reiciendis, soluta officiis harum quo eos facere quod quos? Beatae, enim voluptates!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus velit ex corporis maiores neque
+            incidunt laudantium. Aspernatur nobis placeat iusto quos dignissimos itaque, nesciunt sed. Vel ducimus qui
+            non rerum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque asperiores laudantium vel optio saepe
+            quas dicta aliquam. Reiciendis, soluta officiis harum quo eos facere quod quos? Beatae, enim voluptates!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus velit ex corporis maiores neque
+            incidunt laudantium. Aspernatur nobis placeat iusto quos dignissimos itaque, nesciunt sed. Vel ducimus qui
+            non rerum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque asperiores laudantium vel optio saepe
+            quas dicta aliquam. Reiciendis, soluta officiis harum quo eos facere quod quos? Beatae, enim voluptates!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus velit ex corporis maiores neque
+            incidunt laudantium. Aspernatur nobis placeat iusto quos dignissimos itaque, nesciunt sed. Vel ducimus qui
+            non rerum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque asperiores laudantium vel optio saepe
+            quas dicta aliquam. Reiciendis, soluta officiis harum quo eos facere quod quos? Beatae, enim voluptates!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus velit ex corporis maiores neque
+            incidunt laudantium. Aspernatur nobis placeat iusto quos dignissimos itaque, nesciunt sed. Vel ducimus qui
+            non rerum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque asperiores laudantium vel optio saepe
+            quas dicta aliquam. Reiciendis, soluta officiis harum quo eos facere quod quos? Beatae, enim voluptates!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus velit ex corporis maiores neque
+            incidunt laudantium. Aspernatur nobis placeat iusto quos dignissimos itaque, nesciunt sed. Vel ducimus qui
+            non rerum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque asperiores laudantium vel optio saepe
+            quas dicta aliquam. Reiciendis, soluta officiis harum quo eos facere quod quos? Beatae, enim voluptates!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus velit ex corporis maiores neque
+            incidunt laudantium. Aspernatur nobis placeat iusto quos dignissimos itaque, nesciunt sed. Vel ducimus qui
+            non rerum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque asperiores laudantium vel optio saepe
+            quas dicta aliquam. Reiciendis, soluta officiis harum quo eos facere quod quos? Beatae, enim voluptates!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus velit ex corporis maiores neque
+            incidunt laudantium. Aspernatur nobis placeat iusto quos dignissimos itaque, nesciunt sed. Vel ducimus qui
+            non rerum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque asperiores laudantium vel optio saepe
+            quas dicta aliquam. Reiciendis, soluta officiis harum quo eos facere quod quos? Beatae, enim voluptates!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus velit ex corporis maiores neque
+            incidunt laudantium. Aspernatur nobis placeat iusto quos dignissimos itaque, nesciunt sed. Vel ducimus qui
+            non rerum?</p>
+    </div>
+
+</body>
+
+</html>
